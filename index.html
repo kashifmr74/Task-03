@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Area Of Triangle</h1>
+    <input type="number" placeholder=" side a" id="a">
+    <input type="number" placeholder=" side b" id="b">
+    <input type="number" placeholder=" side c" id="c">
+    <br>
+    <button onclick="myfunction()"> Calculate Area</button>
+    <h2 id="area"></h2>
+<script>
+function myfunction(){
+    let a = document.getElementById("a").value
+    let b = document.getElementById("b").value
+    let c = document.getElementById("c").value
+    let s = (Number(a) + Number(b) + Number(c)) / 2 // where s is perimeter
+    let area = Math.sqrt(s*(s-a)*(s-b)*(s-c))
+
+    document.getElementById("area").innerText = area
+
+
+
+
+
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
